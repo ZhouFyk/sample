@@ -98,7 +98,7 @@ class UsersController extends Controller
     {
         $view = 'emails.confirm';
         $data = compact('user');
-        $from = 'test@qq.com';
+        $from = 'test@qq.com'; // 正式线上时，无需此参数。默认就是线上的配置相关
         $name = 'fuyk';
         $to = $user->email;
         $subject = '感谢注册，请确认你的邮箱';
